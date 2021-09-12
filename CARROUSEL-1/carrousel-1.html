@@ -31,6 +31,7 @@
         display: inline-block;
         transition: 450ms all;
         transform-origin: center left;
+        position: relative;
     }
     .carrousel-item:hover ~ .carrousel-item {
         transform: translate3d(100px, 0, 0);
@@ -42,13 +43,37 @@
         transform: scale(1.5);
         opacity: 1;
     }
+    .carrousel-item__img {
+        width: 200px;
+        height: 250px;;
+        object-fit: cover;
+    }
+    .carrousel-item__details {
+        background: linear-gradient(to top, rgba(0, 0, 0, 0.9), 0%, rgba(0, 0, 0, 0), 100%);
+        font-size: 10px;
+        opacity: 1;
+        transition: 450ms opacity;
+        padding: 10px;
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+    }
 </style>
 <body>
     <section class="carrousel">
         <div class="carrousel__container">
             <div class="carrousel-item">
                 <img class="carrousel-item__img" src="https://images.pexels.com/photos/6966060/pexels-photo-6966060.jpeg?cs=srgb&dl=pexels-mathias-pr-reding-6966060.jpg&fm=jpg" alt="caballos">
-                
+                <div class="carrousel-item__details">
+                    <div>
+                        <img src="/CARROUSEL-1/img/play-icon.png" alt="play-icon">
+                        <img src="/CARROUSEL-1/img/plus-icon.png" alt="plus-icon">
+                    </div>
+                </div>
+                <p class="carrousel-item__details--title">Titulo descriptivo</p>
+                <p class="carrousel-item__details--subtitle">2019 16+ 114 minutos</p>                
             </div>
             <div class="carrousel-item">
             </div>
