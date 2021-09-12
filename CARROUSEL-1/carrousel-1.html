@@ -21,7 +21,7 @@
         margin: 70px 0px;
         padding-bottom: 10px;
     }
-    .carrousel__item {
+    .carrousel-item {
         background-color: palevioletred;
         width: 200px;
         height: 250px;
@@ -32,13 +32,13 @@
         transition: 450ms all;
         transform-origin: center left;
     }
-    .carrousel__item:hover ~ .carrousel__item {
+    .carrousel-item:hover ~ .carrousel-item {
         transform: translate3d(100px, 0, 0);
     }
-    .carrousel__container:hover ~ .carrousel__item {
+    .carrousel__container:hover ~ .carrousel-item {
         opacity: 0.3;
     }
-    .carrousel__container:hover .carrousel__item:hover {
+    .carrousel__container:hover .carrousel-item:hover {
         transform: scale(1.5);
         opacity: 1;
     }
@@ -46,9 +46,11 @@
 <body>
     <section class="carrousel">
         <div class="carrousel__container">
-            <div class="carrousel__item">
+            <div class="carrousel-item">
+                <img class="carrousel-item__img" src="https://images.pexels.com/photos/6966060/pexels-photo-6966060.jpeg?cs=srgb&dl=pexels-mathias-pr-reding-6966060.jpg&fm=jpg" alt="caballos">
+                
             </div>
-            <div class="carrousel__item">
+            <div class="carrousel-item">
             </div>
         </div>
     </section>
