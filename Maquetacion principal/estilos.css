@@ -108,6 +108,32 @@ body {
     margin: 70px 0px;
     padding-bottom: 10px;
   }
+
+  .carousel::-webkit-scrollbar {
+    -webkit-appearance: none;
+  }
+  
+  .carousel::-webkit-scrollbar:vertical {
+    width:10px;
+  }
+  
+  .carousel::-webkit-scrollbar-button:increment  .carousel__container::-webkit-scrollbar-button {
+    display: none;
+  } 
+  
+  .carousel::-webkit-scrollbar:horizontal {
+    height: 10px;
+  }
+  
+  .carousel::-webkit-scrollbar-thumb {
+    background-color: white;
+    border-radius: 20px;
+    border: 2px solid navy;
+  }
+  
+  .carousel::-webkit-scrollbar-track {
+    border-radius: 10px;  
+  }
   
   .carousel__container:hover .carousel-item {
     opacity: 0.3;
